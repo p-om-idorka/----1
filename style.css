@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table, td {
+    border: 3px dashed black;
+    background: yellow;
+}
+
+table {
+    width: 1500px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    height: 800px;
+}
+
+td {
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.highlighted {
+    background: orange;
+}
+
+.zagolovok-1 {
+    color: darkkhaki;
+    font-size: 20px;
+}
+
+.zagolovok-2 {
+    color: darkviolet;
+    font-size: 32px;
+}
+
+.zagolovok-3 {
+    color: deepskyblue;
+    font-size: 27px;
+}
+
+.text-1 {
+    font-style: italic;
+    text-decoration: underline;
+    color: #460187;
+}
+
+.text-2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.text-3 {
+    font-size: 18px;
+    color: deepskyblue;
+    font-stretch: normal;
+}
+
+.text-4 {
+    color: rgb(17, 92, 71);
+    font-stretch: condensed;
+}
+
+.text-5 {
+    font-family: 'Impact', fantasy;
+    color: cornflowerblue;
+}
+
+.list-1 {
+    padding: 20px;
+}
+
+.list-1 ul {
+    list-style: disc;
+}
+
+.list-1 ul li {
+    color: brown;
+    text-decoration: underline;
+}
+
+.list-2 li {
+    list-style: none;
+}
+
+.list-2 li::before {
+    content: '-';
+    margin-right: 8px;
+}
+
+.list-3 {
+    padding: 21px;
+}
+.list-3 > li::marker {
+    font-weight: bold;
+}
+.number > li::marker {
+    content: counter(list-item) ") ";
+}
+.small-letters > li {
+    list-style: none;
+    counter-increment: list-item;
+}
+.small-letters > li::marker {
+    font-weight: normal !important;
+    content: counter(list-item, lower-alpha) ") ";
+}
